@@ -1,4 +1,4 @@
-# Java-Simulation-of-Operating-System
+# Simulation-of-Operating-System
 This repository contains four operating system simulation projects from different parts of the OS : 
 1. Linker
 2. Processes Scheduling
