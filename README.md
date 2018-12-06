@@ -6,5 +6,3 @@ This repository contains four operating system simulation projects from differen
 2. Processes Scheduling
 3. Banker's Algorithm
 4. Demand Paging
-
-Note: the list above is tentative, may be subject to change.
