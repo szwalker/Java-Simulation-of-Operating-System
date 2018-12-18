@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Scheduling Lab</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css"
+          href="http://cs.nyu.edu/~gottlieb/css/courses.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="//localhost/~gottlieb/css/courses.css"/>
+    <link rel="shortcut icon"
+	  href="//cs.nyu.edu/~gottlieb/courses/os202/diagrams/favicon.png"/>
+    <style type="text/css">
+      kbd {background-color:#FFFFF0; color:#0000D0}
+      kbd.optional {background-color:#C8C0C0; color:#000040}
+      kbd.h5 {background-color:white; color:#806060}
+      img.optional {background-color:#C8C0C0}
+      table.special th {padding:5px 10px}
+    </style>
+  </head>
+  <body>
+
+<h1>Scheduling Lab</h1>
+
+<h2>Assignment</h2>
+<p>Lab 2 (Scheduling) is available on
+  <a href="http://newclasses.nyu.edu">NYU Classes</a>.</p>
+
+<!-- <h2>Programming Language</h2> -->
+<!-- <p>The department wants to reinforce facility with C the language -->
+<!--   taught in 201 and hence lab 2 or lab 3 (or -->
+<!--   both) <strong>must</strong> be written in C. -->
+<!--   C++ is also permitted, but I do not recommend learning C++ for the -->
+<!--   lab; it is a large and somewhat complex language.</p> -->
+
+<!-- <h2>Honors Addendum</h2> -->
+<!-- <p>The honors addendum is to add the Processor Sharing (PS) -->
+<!--   scheduling algorithms.</p> -->
+<!-- <p>Two examples I worked out by hand are -->
+<!--   <a href="PS-prob-and-soln-1">here</a> and -->
+<!--   <a href="PS-prob-and-soln-2">here</a>. -->
+
+<a href="../random-numbers"><h2>(Large) list of random numbers</h2></a>
+
+<h2>Inputs and outputs</h2>
+
+<br/><table class="ruled">
+<tr>
+  <th>Algorithm<th>input<th>output<th>detailed<th>show random
+<tr>
+  <td rowspan="7" align="center">FCFS
+  <td><a href="input-1">click here</a>
+  <td><a href="fcfs-output-1">click here</a>
+  <td><a href="fcfs-output-1-detailed">click here</a>
+  <td><a href="fcfs-output-1-show-random">click here</a>
+<tr>
+  <td><a href="input-2">click here</a>
+  <td><a href="fcfs-output-2">click here</a>
+  <td><a href="fcfs-output-2-detailed">click here</a>
+  <td><a href="fcfs-output-2-show-random">click here</a>
+<tr>
+  <td><a href="input-3">click here</a>
+  <td><a href="fcfs-output-3">click here</a>
+  <td><a href="fcfs-output-3-detailed">click here</a>
+  <td><a href="fcfs-output-3-show-random">click here</a>
+<tr>
+  <td><a href="input-4">click here</a>
+  <td><a href="fcfs-output-4">click here</a>
+  <td><a href="fcfs-output-4-detailed">click here</a>
+  <td><a href="fcfs-output-4-show-random">click here</a>
+<tr>
+  <td><a href="input-5">click here</a>
+  <td><a href="fcfs-output-5">click here</a>
+  <td><a href="fcfs-output-5-detailed">click here</a>
+  <td><a href="fcfs-output-5-show-random">click here</a>
+<tr>
+  <td><a href="input-6">click here</a>
+  <td><a href="fcfs-output-6">click here</a>
+  <td><a href="fcfs-output-6-detailed">click here</a>
+  <td><a href="fcfs-output-6-show-random">click here</a>
+<tr>
+  <td><a href="input-7">click here</a>
+  <td><a href="fcfs-output-7">click here</a>
+  <td><a href="fcfs-output-7-detailed">click here</a>
+  <td><a href="fcfs-output-7-show-random">click here</a>
+
+<tr>
+  <td rowspan="7" align="center">RR q=2
+  <td><a href="input-1">click here</a>
+  <td><a href="rr-output-1">click here</a>
+  <td><a href="rr-output-1-detailed">click here</a>
+  <td><a href="rr-output-1-show-random">click here</a>
+<tr>
+  <td><a href="input-2">click here</a>
+  <td><a href="rr-output-2">click here</a>
+  <td><a href="rr-output-2-detailed">click here</a>
+  <td><a href="rr-output-2-show-random">click here</a>
+<tr>
+  <td><a href="input-3">click here</a>
+  <td><a href="rr-output-3">click here</a>
+  <td><a href="rr-output-3-detailed">click here</a>
+  <td><a href="rr-output-3-show-random">click here</a>
+<tr>
+  <td><a href="input-4">click here</a>
+  <td><a href="rr-output-4">click here</a>
+  <td><a href="rr-output-4-detailed">click here</a>
+  <td><a href="rr-output-4-show-random">click here</a>
+<tr>
+  <td><a href="input-5">click here</a>
+  <td><a href="rr-output-5">click here</a>
+  <td><a href="rr-output-5-detailed">click here</a>
+  <td><a href="rr-output-5-show-random">click here</a>
+<tr>
+  <td><a href="input-6">click here</a>
+  <td><a href="rr-output-6">click here</a>
+  <td><a href="rr-output-6-detailed">click here</a>
+  <td><a href="rr-output-6-show-random">click here</a>
+<tr>
+  <td><a href="input-7">click here</a>
+  <td><a href="rr-output-7">click here</a>
+  <td><a href="rr-output-7-detailed">click here</a>
+  <td><a href="rr-output-7-show-random">click here</a>
+
+<!-- <tr> -->
+<!--   <td rowspan="7" align="center">&nbsp;Uniprogrammed&nbsp; -->
+<!--   <td><a href="input-1">click here</a> -->
+<!--   <td><a href="uni-output-1">click here</a> -->
+<!--   <td><a href="uni-output-1-detailed">click here</a> -->
+<!--   <td><a href="uni-output-1-show-random">click here</a> -->
+<!-- <tr> -->
+<!--   <td><a href="input-2">click here</a> -->
+<!--   <td><a href="uni-output-2">click here</a> -->
+<!--   <td><a href="uni-output-2-detailed">click here</a> -->
+<!--   <td><a href="uni-output-2-show-random">click here</a> -->
+<!-- <tr> -->
+<!--   <td><a href="input-3">click here</a> -->
+<!--   <td><a href="uni-output-3">click here</a> -->
+<!--   <td><a href="uni-output-3-detailed">click here</a> -->
+<!--   <td><a href="uni-output-3-show-random">click here</a> -->
+<!-- <tr> -->
+<!--   <td><a href="input-4">click here</a> -->
+<!--   <td><a href="uni-output-4">click here</a> -->
+<!--   <td><a href="uni-output-4-detailed">click here</a> -->
+<!--   <td><a href="uni-output-4-show-random">click here</a> -->
+<!-- <tr> -->
+<!--   <td><a href="input-5">click here</a> -->
+<!--   <td><a href="uni-output-5">click here</a> -->
+<!--   <td><a href="uni-output-5-detailed">click here</a> -->
+<!--   <td><a href="uni-output-5-show-random">click here</a> -->
+<!-- <tr> -->
+<!--   <td><a href="input-6">click here</a> -->
+<!--   <td><a href="uni-output-6">click here</a> -->
+<!--   <td><a href="uni-output-6-detailed">click here</a> -->
+<!--   <td><a href="uni-output-6-show-random">click here</a> -->
+<!-- <tr> -->
+<!--   <td><a href="input-7">click here</a> -->
+<!--   <td><a href="uni-output-7">click here</a> -->
+<!--   <td><a href="uni-output-7-detailed">click here</a> -->
+<!--   <td><a href="uni-output-7-show-random">click here</a> -->
+
+<tr>
+  <td rowspan="7" align="center">LCFS
+  <td><a href="input-1">click here</a>
+  <td><a href="lcfs-output-1">click here</a>
+  <td><a href="lcfs-output-1-detailed">click here</a>
+  <td><a href="lcfs-output-1-show-random">click here</a>
+<tr>
+  <td><a href="input-2">click here</a>
+  <td><a href="lcfs-output-2">click here</a>
+  <td><a href="lcfs-output-2-detailed">click here</a>
+  <td><a href="lcfs-output-2-show-random">click here</a>
+<tr>
+  <td><a href="input-3">click here</a>
+  <td><a href="lcfs-output-3">click here</a>
+  <td><a href="lcfs-output-3-detailed">click here</a>
+  <td><a href="lcfs-output-3-show-random">click here</a>
+<tr>
+  <td><a href="input-4">click here</a>
+  <td><a href="lcfs-output-4">click here</a>
+  <td><a href="lcfs-output-4-detailed">click here</a>
+  <td><a href="lcfs-output-4-show-random">click here</a>
+<tr>
+  <td><a href="input-5">click here</a>
+  <td><a href="lcfs-output-5">click here</a>
+  <td><a href="lcfs-output-5-detailed">click here</a>
+  <td><a href="lcfs-output-5-show-random">click here</a>
+<tr>
+  <td><a href="input-6">click here</a>
+  <td><a href="lcfs-output-6">click here</a>
+  <td><a href="lcfs-output-6-detailed">click here</a>
+  <td><a href="lcfs-output-6-show-random">click here</a>
+<tr>
+  <td><a href="input-7">click here</a>
+  <td><a href="lcfs-output-7">click here</a>
+  <td><a href="lcfs-output-7-detailed">click here</a>
+  <td><a href="lcfs-output-7-show-random">click here</a>
+
+<!-- <tr> -->
+<!--   <td rowspan="7" align="center">SJF -->
+<!--   <td><a href="input-1">click here</a> -->
+<!--   <td><a href="sjf-output-1">click here</a> -->
+<!--   <td><a href="sjf-output-1-detailed">click here</a> -->
+<!--   <td><a href="sjf-output-1-show-random">click here</a> -->
+<!-- <tr> -->
+<!--   <td><a href="input-2">click here</a> -->
+<!--   <td><a href="sjf-output-2">click here</a> -->
+<!--   <td><a href="sjf-output-2-detailed">click here</a> -->
+<!--   <td><a href="sjf-output-2-show-random">click here</a> -->
+<!-- <tr> -->
+<!--   <td><a href="input-3">click here</a> -->
+<!--   <td><a href="sjf-output-3">click here</a> -->
+<!--   <td><a href="sjf-output-3-detailed">click here</a> -->
+<!--   <td><a href="sjf-output-3-show-random">click here</a> -->
+<!-- <tr> -->
+<!--   <td><a href="input-4">click here</a> -->
+<!--   <td><a href="sjf-output-4">click here</a> -->
+<!--   <td><a href="sjf-output-4-detailed">click here</a> -->
+<!--   <td><a href="sjf-output-4-show-random">click here</a> -->
+<!-- <tr> -->
+<!--   <td><a href="input-5">click here</a> -->
+<!--   <td><a href="sjf-output-5">click here</a> -->
+<!--   <td><a href="sjf-output-5-detailed">click here</a> -->
+<!--   <td><a href="sjf-output-5-show-random">click here</a> -->
+<!-- <tr> -->
+<!--   <td><a href="input-6">click here</a> -->
+<!--   <td><a href="sjf-output-6">click here</a> -->
+<!--   <td><a href="sjf-output-6-detailed">click here</a> -->
+<!--   <td><a href="sjf-output-6-show-random">click here</a> -->
+<!-- <tr> -->
+<!--   <td><a href="input-7">click here</a> -->
+<!--   <td><a href="sjf-output-7">click here</a> -->
+<!--   <td><a href="sjf-output-7-detailed">click here</a> -->
+<!--   <td><a href="sjf-output-7-show-random">click here</a> -->
+
+<!-- <tr> -->
+<!--   <td rowspan="7" align="center">PSJF -->
+<!--   <td><a href="input-1">click here</a> -->
+<!--   <td><a href="psjf-output-1">click here</a> -->
+<!--   <td><a href="psjf-output-1-detailed">click here</a> -->
+<!--   <td><a href="psjf-output-1-show-random">click here</a> -->
+<!-- <tr> -->
+<!--   <td><a href="input-2">click here</a> -->
+<!--   <td><a href="psjf-output-2">click here</a> -->
+<!--   <td><a href="psjf-output-2-detailed">click here</a> -->
+<!--   <td><a href="psjf-output-2-show-random">click here</a> -->
+<!-- <tr> -->
+<!--   <td><a href="input-3">click here</a> -->
+<!--   <td><a href="psjf-output-3">click here</a> -->
+<!--   <td><a href="psjf-output-3-detailed">click here</a> -->
+<!--   <td><a href="psjf-output-3-show-random">click here</a> -->
+<!-- <tr> -->
+<!--   <td><a href="input-4">click here</a> -->
+<!--   <td><a href="psjf-output-4">click here</a> -->
+<!--   <td><a href="psjf-output-4-detailed">click here</a> -->
+<!--   <td><a href="psjf-output-4-show-random">click here</a> -->
+<!-- <tr> -->
+<!--   <td><a href="input-5">click here</a> -->
+<!--   <td><a href="psjf-output-5">click here</a> -->
+<!--   <td><a href="psjf-output-5-detailed">click here</a> -->
+<!--   <td><a href="psjf-output-5-show-random">click here</a> -->
+<!-- <tr> -->
+<!--   <td><a href="input-6">click here</a> -->
+<!--   <td><a href="psjf-output-6">click here</a> -->
+<!--   <td><a href="psjf-output-6-detailed">click here</a> -->
+<!--   <td><a href="psjf-output-6-show-random">click here</a> -->
+<!-- <tr> -->
+<!--   <td><a href="input-7">click here</a> -->
+<!--   <td><a href="psjf-output-7">click here</a> -->
+<!--   <td><a href="psjf-output-7-detailed">click here</a> -->
+<!--   <td><a href="psjf-output-7-show-random">click here</a> -->
+
+<tr>
+  <td rowspan="7" align="center">HPRN
+  <td><a href="input-1">click here</a>
+  <td><a href="hprn-output-1">click here</a>
+  <td><a href="hprn-output-1-detailed">click here</a>
+  <td><a href="hprn-output-1-show-random">click here</a>
+<tr>
+  <td><a href="input-2">click here</a>
+  <td><a href="hprn-output-2">click here</a>
+  <td><a href="hprn-output-2-detailed">click here</a>
+  <td><a href="hprn-output-2-show-random">click here</a>
+<tr>
+  <td><a href="input-3">click here</a>
+  <td><a href="hprn-output-3">click here</a>
+  <td><a href="hprn-output-3-detailed">click here</a>
+  <td><a href="hprn-output-3-show-random">click here</a>
+<tr>
+  <td><a href="input-4">click here</a>
+  <td><a href="hprn-output-4">click here</a>
+  <td><a href="hprn-output-4-detailed">click here</a>
+  <td><a href="hprn-output-4-show-random">click here</a>
+<tr>
+  <td><a href="input-5">click here</a>
+  <td><a href="hprn-output-5">click here</a>
+  <td><a href="hprn-output-5-detailed">click here</a>
+  <td><a href="hprn-output-5-show-random">click here</a>
+<tr>
+  <td><a href="input-6">click here</a>
+  <td><a href="hprn-output-6">click here</a>
+  <td><a href="hprn-output-6-detailed">click here</a>
+  <td><a href="hprn-output-6-show-random">click here</a>
+<tr>
+  <td><a href="input-7">click here</a>
+  <td><a href="hprn-output-7">click here</a>
+  <td><a href="hprn-output-7-detailed">click here</a>
+  <td><a href="hprn-output-7-show-random">click here</a>
+
+<!-- Cant used SRR until fix problem found by hirata
+<tr>
+  <td rowspan="7" align="center">SRR q=10<br>a=5 b=2
+  <td><a href="input-1">click here</a>
+  <td><a href="srr-output-1">click here</a>
+  <td><a href="srr-output-1-detailed">click here</a>
+ <td><a href="srr-output-1-show-random">click here</a>
+<tr>
+  <td><a href="input-2">click here</a>
+  <td><a href="srr-output-2">click here</a>
+  <td><a href="srr-output-2-detailed">click here</a>
+  <td><a href="srr-output-2-show-random">click here</a>
+<tr>
+  <td><a href="input-3">click here</a>
+  <td><a href="srr-output-3">click here</a>
+  <td><a href="srr-output-3-detailed">click here</a>
+  <td><a href="srr-output-3-show-random">click here</a>
+<tr>
+  <td><a href="input-4">click here</a>
+  <td><a href="srr-output-4">click here</a>
+  <td><a href="srr-output-4-detailed">click here</a>
+  <td><a href="srr-output-4-show-random">click here</a>
+<tr>
+  <td><a href="input-5">click here</a>
+  <td><a href="srr-output-5">click here</a>
+  <td><a href="srr-output-5-detailed">click here</a>
+  <td><a href="srr-output-5-show-random">click here</a>
+<tr>
+  <td><a href="input-6">click here</a>
+  <td><a href="srr-output-6">click here</a>
+  <td><a href="srr-output-6-detailed">click here</a>
+  <td><a href="srr-output-6-show-random">click here</a>
+<tr>
+  <td><a href="input-7">click here</a>
+  <td><a href="srr-output-7">click here</a>
+  <td><a href="srr-output-7-detailed">click here</a>
+  <td><a href="srr-output-7-show-random">click here</a>
+-->
+
+</table>
+
+
+<br>
+<br>
+<address>
+<a href="http://cs.nyu.edu/~gottlieb">Allan Gottlieb</a>
+</address>
+</body>
+</html>
