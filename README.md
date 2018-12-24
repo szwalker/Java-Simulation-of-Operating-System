@@ -1,5 +1,4 @@
 # Operating-System-Simulation
-UPDATE: the simulation programs will be uploaded after Decemeber 2018.
 
 This repository contains four operating system simulation projects from different parts of the OS : 
 1. Linker
