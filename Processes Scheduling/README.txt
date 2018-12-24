@@ -1,12 +1,6 @@
-CSCI-UA 202 Operating System
-
 Scheduler Project
 
-Author: Jiaqi Liu
-
-Netid: jl8456
-
-Please note: This program assumes there are ***no parameters*** between processes
+Please note: This program assumes there are no parameters between processes
 from input text file that simulates processes.
 
 Please follow the instructions below to compile and to execute this program.
