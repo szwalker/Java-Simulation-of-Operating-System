@@ -1,9 +1,4 @@
-CSCI-UA 202 Operating System
-
 Linker Project
-
-Name: Jiaqi Liu
-Netid: jl8456
 
 Please follow the instructions below to compile and to execute this program.
 
@@ -17,7 +12,6 @@ Command: javac linker.java
 
 3. Execute the program using the following command.
 Command: java linker
-
 
 Additional note:
 1. All result will be displayed on console (terminal).
