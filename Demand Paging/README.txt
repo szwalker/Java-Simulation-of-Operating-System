@@ -1,10 +1,4 @@
-CSCI-UA 202 Operating System
-
 Demand Paging Project
-
-Author: Jiaqi Liu
-
-Netid: jl8456
 
 Please follow the instructions below to compile and to execute this program.
 
